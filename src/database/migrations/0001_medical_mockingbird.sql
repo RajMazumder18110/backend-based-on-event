@@ -1,0 +1,1 @@
+CREATE UNIQUE INDEX `storeEvents_transactionHash_unique` ON `storeEvents` (`transactionHash`);

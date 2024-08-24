@@ -7,7 +7,6 @@
     "prepare": "husky",
     "clean": "rm -rf dist/",
     "start": "node dist/main",
-    "studio": "drizzle-kit studio",
     "migrate": "drizzle-kit migrate",
     "generate": "drizzle-kit generate",
     "build:dev": "tsc -p tsconfig.json",
@@ -29,8 +28,10 @@
   "devDependencies": {
     "@commitlint/cli": "^19.4.0",
     "@commitlint/config-conventional": "^19.2.2",
+    "@types/better-sqlite3": "^7.6.11",
     "@types/module-alias": "^2.0.4",
     "@types/node": "^22.5.0",
+    "@types/node-cron": "^3.0.11",
     "drizzle-kit": "^0.24.1",
     "husky": "^9.1.5",
     "nodemon": "^3.1.4",
@@ -38,8 +39,11 @@
     "typescript": "^5.5.4"
   },
   "dependencies": {
+    "better-sqlite3": "^11.2.1",
     "dotenv": "^16.4.5",
     "drizzle-orm": "^0.33.0",
-    "module-alias": "^2.2.3"
+    "ethers": "^6.13.2",
+    "module-alias": "^2.2.3",
+    "node-cron": "^3.0.3"
   }
 }
